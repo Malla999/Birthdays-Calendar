@@ -1,0 +1,143 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  min-width: 300px; /* Minimum width to ensure components do not shrink too much */
+  margin: 10px;
+}
+
+.calendar-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust the width to fill the container */
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.calendar-header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.calendar-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-row {
+  display: flex;
+}
+
+.calendar-day-header,
+.calendar-day {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar-day-header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.calendar-day:last-child {
+  border-right: none;
+}
+
+.calendar-row:last-child .calendar-day {
+  border-bottom: none;
+}
+
+.empty {
+  background-color: #f7f7f7;
+}
+
+.calendar-day:hover {
+  background-color: #eaeaea;
+}
+
+.star-icon {
+  margin-right: 10px;
+  cursor: pointer;
+  color: grey;
+}
+
+.star-icon.favorite {
+  color: gold;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.birthday-list {
+  list-style: none; /* Remove default list style */
+  padding: 0;
+}
+
+.birthday-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.favorite-birthday-list {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-birthday-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    margin: 0;
+    min-width: 100%;
+  }
+
+  .right-panel {
+    margin-top: 20px;
+  }
+}

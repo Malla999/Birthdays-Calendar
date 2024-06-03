@@ -25,7 +25,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Adjust the width to fill the container */
+  width: 100%; 
 }
 
 .calendar-header {
@@ -126,7 +126,7 @@
   font-size: 16px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;

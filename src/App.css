@@ -11,7 +11,7 @@
 
 .left-panel, .right-panel {
   flex: 1;
-  min-width: 300px; /* Minimum width to ensure components do not shrink too much */
+  min-width: 300px; 
   margin: 10px;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .birthday-list {
-  list-style: none; /* Remove default list style */
+  list-style: none; 
   padding: 0;
 }
 
